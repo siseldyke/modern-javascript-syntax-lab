@@ -25,3 +25,19 @@ console.log(secondTopping)
 console.log(thirdTopping)
 
 console.log(pizzaToppings[0])
+
+// Given the following object, use destructuring to create variables `make` and `model` that will hold the respective values.
+
+const car = {
+    make: 'Audi',
+    model: 'q5',
+  };
+  
+  // Your code here
+const {make, model} = car  
+
+console.log(make)
+console.log(model)
+
+console.log(car.make)
+console.log(car.model)
