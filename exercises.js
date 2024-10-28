@@ -75,16 +75,18 @@ const nums = [13, 87, 2, 89, 12, 4, 90, 63];
 // Use propertyName as a dynamic key in userProfile, assigning a relevant value.
 
 // Your code here
+
+// const userProfile = {username : 'siseldyke'}
+// const propertyName = 'username'
+//     const fullUserProfile = { [propertyName] : true}
+
+// console.log(fullUserProfile)
+
 // exercise 7
-const userProfile = {username : 'siseldyke'}
-const propertyName = 'username'
-    const fullUserProfile = { [propertyName] : true}
 
-console.log(fullUserProfile)
-// console.log(userProfile)
-// console.log(propertyName)
+//seems like its working
 
-//exercise 8
+// exercise 8
 // Create a function that takes two parameters, `noun` and `adjective`, both with the following respective default values:
 
 // 1. `cat`
@@ -95,18 +97,17 @@ console.log(fullUserProfile)
 
 // Your code here
 
-// function combineWords(noun = 'cat', adjective = 'white'){
-//     return `the ${noun} is ${adjective}`
-    
-// }
+function fullSentence(noun = 'cat', adjective = 'white'){
+    return `the ${noun} is ${adjective}`
+    }
 
-// combineWords(1)
-
+fullSentence( )
+console.log(fullSentence)
 //exercise 9
 // Convert the following `if...else` statement in to a ternary:
 
-let pizza = 'tasty';
-let access = 'tasty' ? 'Yes' : 'No';
+let pizza = 'tasty'; //changes it to yuck if i put something else here
+let access = pizza  ? 'Yes' : 'No';
 if (pizza === 'tasty') {
   console.log('yum');
 } else {
@@ -114,3 +115,37 @@ if (pizza === 'tasty') {
 }
 console.log(access)
 // Your code here
+
+
+//exercise 10
+// 1. SET LANGUAGE
+
+// Construct a single line of code that assigns a default value using the logical OR operator. This line should match the logic of the following statement: 
+
+// "LANG is equal to localLangConfig or the default value of English."
+
+const localLangConfig = '' || 'en';  // Change to 'es', 'fr', etc., or keep it null
+const LANG = localLangConfig
+// a. Create a variable called LANG
+// b. Assign LANG the value of localLangConfig or 'en' as a default
+
+// Your code here
+
+// Log the result
+console.log('Language setting:', LANG);
+
+const userSavedTheme = '' || 'light'
+const USER_THEME = userSavedTheme
+
+console.log('User theme setting:', USER_THEME);
+//exercise 11
+
+// Now check for `cat.age` on `adventurer`. See how it errors out? Use optional chaining in a console.log that it returns undefined instead.
+
+const adventurer = {
+  name: 'Alice',
+};
+
+let cat = adventurer.cat?.age; // Your code here
+
+console.log(cat);
