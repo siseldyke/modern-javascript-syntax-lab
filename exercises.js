@@ -63,8 +63,8 @@ const car = {
   const myCar = {...car}
   myCar.model ='q7'
 
-  console.log(car)
   console.log(myCar)
+  console.log(myCar.model)
 
   // Your code here
   
