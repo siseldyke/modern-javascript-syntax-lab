@@ -75,16 +75,12 @@ const nums = [13, 87, 2, 89, 12, 4, 90, 63];
 // Use propertyName as a dynamic key in userProfile, assigning a relevant value.
 
 // Your code here
-//exercise 7
-// const userProfile = {
-//     username: 'stef',
-//     name: 'stefan',
-//     age: 36
-// }
-// propertyName = {
-//     [userProfile.username]:'siseldyke'
-// }
+// exercise 7
+const userProfile = {username : 'siseldyke'}
+const propertyName = 'username'
+    const fullUserProfile = { [propertyName] : true}
 
+console.log(fullUserProfile)
 // console.log(userProfile)
 // console.log(propertyName)
 
@@ -99,18 +95,18 @@ const nums = [13, 87, 2, 89, 12, 4, 90, 63];
 
 // Your code here
 
-function combineWords(noun = 'cat', adjective = 'white'){
-    return `the ${noun} is ${adjective}`
+// function combineWords(noun = 'cat', adjective = 'white'){
+//     return `the ${noun} is ${adjective}`
     
-}
+// }
 
-combineWords(1)
+// combineWords(1)
 
 //exercise 9
 // Convert the following `if...else` statement in to a ternary:
 
 let pizza = 'tasty';
-let access = 'tasty'
+let access = 'tasty' ? 'Yes' : 'No';
 if (pizza === 'tasty') {
   console.log('yum');
 } else {
