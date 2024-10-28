@@ -107,12 +107,8 @@ console.log(fullSentence)
 // Convert the following `if...else` statement in to a ternary:
 
 let pizza = 'tasty'; //changes it to yuck if i put something else here
-let access = pizza  ? 'Yes' : 'No';
-if (pizza === 'tasty') {
-  console.log('yum');
-} else {
-  console.log('yuck');
-}
+let access = pizza === 'tasty' ? 'Yum' : 'Yuck';
+
 console.log(access)
 // Your code here
 
