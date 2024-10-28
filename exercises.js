@@ -43,30 +43,30 @@ const nums = [13, 87, 2, 89, 12, 4, 90, 63];
 // console.log(car.model)
 
 // Duplicate the following array using the spread operator and assign it to `controversialPizzaToppings`. Then, log the variable.
-//exercise 4
-const pizzaToppings = ['Pineapple', 'Olives', 'Anchovies'];
+// //exercise 4
+// const pizzaToppings = ['Pineapple', 'Olives', 'Anchovies'];
 
-const controversialPizzaToppings =[...pizzaToppings]
+// const controversialPizzaToppings =[...pizzaToppings]
 
-console.log(controversialPizzaToppings)
+// console.log(controversialPizzaToppings)
 // Your code here
 //exercise 5
 
 // Duplicate the following object and spread its values into a new variable `myCar`.
 
-const car = {
-    make: 'Audi',
-    model: 'q5',
-  };
+// const car = {
+//     make: 'Audi',
+//     model: 'q5',
+//   };
   
-  // Change the `model` property of `myCar` to 'q7'. Log both objects.
-  const myCar = {...car}
-  myCar.model ='q7'
+//   // Change the `model` property of `myCar` to 'q7'. Log both objects.
+//   const myCar = {...car}
+//   myCar.model ='q7'
 
-  console.log(myCar)
-  console.log(myCar.model)
+//   console.log(myCar)
+//   console.log(myCar.model)
 
-  // Your code here
+//   // Your code here
 
 
   //exercise 6
@@ -75,16 +75,46 @@ const car = {
 // Use propertyName as a dynamic key in userProfile, assigning a relevant value.
 
 // Your code here
+//exercise 7
+// const userProfile = {
+//     username: 'stef',
+//     name: 'stefan',
+//     age: 36
+// }
+// propertyName = {
+//     [userProfile.username]:'siseldyke'
+// }
 
-const userProfile = {
-    username: 'stef',
-    name: 'stefan',
-    age: 36
+// console.log(userProfile)
+// console.log(propertyName)
+
+//exercise 8
+// Create a function that takes two parameters, `noun` and `adjective`, both with the following respective default values:
+
+// 1. `cat`
+
+// 2. `white`
+
+// The function should log a sentence 'The cat is white.' by default. The function should substitute the appropriate parameters when supplied arguments.
+
+// Your code here
+
+function combineWords(noun = 'cat', adjective = 'white'){
+    return `the ${noun} is ${adjective}`
+    
 }
-propertyName = {
-    [userProfile.username]:'siseldyke'
+
+combineWords(1)
+
+//exercise 9
+// Convert the following `if...else` statement in to a ternary:
+
+let pizza = 'tasty';
+let access = 'tasty'
+if (pizza === 'tasty') {
+  console.log('yum');
+} else {
+  console.log('yuck');
 }
-
-console.log(userProfile)
-console.log(propertyName)
-
+console.log(access)
+// Your code here
