@@ -97,12 +97,14 @@ const nums = [13, 87, 2, 89, 12, 4, 90, 63];
 
 // Your code here
 
-function fullSentence(noun = 'cat', adjective = 'white'){
-    return `the ${noun} is ${adjective}`
+function fullSentence(noun = `cat`, adjective = `white`){
+  
+  return `the ${noun} is ${adjective}`
+    
     }
 
-fullSentence( )
-console.log(fullSentence)
+fullSentence()
+console.log(fullSentence())
 //exercise 9
 // Convert the following `if...else` statement in to a ternary:
 
@@ -120,18 +122,18 @@ console.log(access)
 
 // "LANG is equal to localLangConfig or the default value of English."
 
-const localLangConfig = '' || 'en';  // Change to 'es', 'fr', etc., or keep it null
-const LANG = localLangConfig
+const localLangConfig = null;  // Change to 'es', 'fr', etc., or keep it null
+
 // a. Create a variable called LANG
 // b. Assign LANG the value of localLangConfig or 'en' as a default
 
 // Your code here
-
+const LANG = localLangConfig || 'en'
 // Log the result
 console.log('Language setting:', LANG);
 
-const userSavedTheme = '' || 'light'
-const USER_THEME = userSavedTheme
+const userSavedTheme = null
+const USER_THEME = userSavedTheme || 'light'
 
 console.log('User theme setting:', USER_THEME);
 //exercise 11
